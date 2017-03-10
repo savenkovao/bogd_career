@@ -38,9 +38,9 @@
 .bg-block {
 	&::after {
 		content: '';
+		display: none;
 		width: 1000%;
 		height: 380px;
-		display: block;
 		position: absolute;
 	    top: 70px;
 		left: -30px;	
@@ -49,6 +49,7 @@
 
 
 		@media @tablet {
+			display: block;
 			top: -100px;
 		    left: -30px;	
 		}
