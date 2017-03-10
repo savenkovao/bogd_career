@@ -1,0 +1,132 @@
+.main {
+	padding: 50px 0;
+
+	@media @tablet {
+		padding: 95px 0 50px;
+	}
+}
+
+.main__cont {
+	max-width: 835px;
+}
+
+.main__hdr-cnt-1{
+	padding-bottom: 20px;
+	display: inline-block;
+	position: relative;
+}
+
+.main__hdr-cnt-2{
+	margin-top: 100px;
+	display: inline-block;
+	position: relative;
+}
+
+.hr-line {
+	&::after {
+		content: '';
+		width: 1000%;
+		height: 4px;
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 0;		
+		background-color: #ffea00;
+	}
+}
+
+.bg-block {
+	&::after {
+		content: '';
+		width: 1000%;
+		height: 380px;
+		display: block;
+		position: absolute;
+	    top: 70px;
+		left: -30px;	
+		background-color: #f5f5f5;
+		z-index: -1;
+
+
+		@media @tablet {
+			top: -100px;
+		    left: -30px;	
+		}
+	}
+}
+
+.main__hdr-cnt-3{
+	position: relative;
+	margin-top: 30px;
+
+	@media @tablet {
+		margin-top: 0;
+	}
+}
+.main__hdr {
+	margin: 0;
+	color: #222;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 52px;
+	text-transform: uppercase;
+}
+.main__txt-cnt-1 {
+	margin-top: 60px;
+}
+.main__txt-cnt-2 {
+	margin-top: 40px;
+}
+.main__call,
+.main__tel-list,
+.main__txt {
+	margin: 0;
+	color: #222;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: justify;
+
+}
+.main__adress-cnt {
+	margin-top: 60px;
+}
+.main__adress {
+	padding-left: 30px;
+	color: #222;
+	font-size: 16px;
+	font-weight: 400;
+	position: relative;
+	text-align: justify;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 26px;
+		height: 21px;
+		top: -4px;
+		left: 0;
+		background-image: url(../../img/dsg/balloon.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+
+	}
+}
+.main__call-cnt {
+	margin-top: 40px;
+}
+
+.main__call {
+	font-weight: 700;
+}
+.main__tel-list-cnt {
+	margin-top: 20px;
+}
+
+.main__tel-list {
+	padding: 0;
+}
+.main__tel {
+	list-style-type: none;
+}
